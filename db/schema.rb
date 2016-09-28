@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 20161102014628) do
     t.integer  "user_id"
     t.index ["user_id"], name: "index_projects_on_user_id", using: :btree
   end
-
   create_table "tasks", force: :cascade do |t|
     t.string   "description"
     t.integer  "project_id"
